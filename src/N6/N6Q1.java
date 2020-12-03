@@ -21,7 +21,7 @@ public class N6Q1 {
         Node node = head;
         while (node.getNext() != null) {
             node = node.getNext();
-            stack.push(node.getData());
+            stack.push(node.getValue());
         }
         return stack;
     }

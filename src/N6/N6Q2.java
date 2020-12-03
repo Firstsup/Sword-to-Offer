@@ -16,7 +16,7 @@ public class N6Q2 {
             if (node.getNext() != null) {
                 function(node.getNext());
             }
-            System.out.print(node.getData() + " ");
+            System.out.print(node.getValue() + " ");
         }
     }
 }

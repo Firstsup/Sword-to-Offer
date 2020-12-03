@@ -1,20 +1,20 @@
 package N6;
 
 public class Node {
-    private int data;
+    private int value;
     private Node next;
 
-    public Node(int data, Node next) {
-        this.data = data;
+    public Node(int value, Node next) {
+        this.value = value;
         this.next = next;
     }
 
-    public int getData() {
-        return data;
+    public int getValue() {
+        return value;
     }
 
-    public void setData(int data) {
-        this.data = data;
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public Node getNext() {
