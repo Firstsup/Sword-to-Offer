@@ -73,3 +73,5 @@ public class N8Q1 {
         return nodenull;
     }
 }
+
+//分四种情况讨论，四种情况值得再思索一番
