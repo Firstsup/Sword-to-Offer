@@ -23,7 +23,6 @@ public class N17Q2 {
     }
 
     public static void printNumber(int[] num) {
-        int count = 0;
         boolean swi = false;
         for (int j : num) {
             if (j != 0) {
@@ -31,9 +30,6 @@ public class N17Q2 {
             }
             if (swi) {
                 System.out.print(j);
-            }
-            if (j == 9) {
-                count++;
             }
         }
         System.out.println();
