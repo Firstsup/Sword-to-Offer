@@ -8,6 +8,17 @@ public class N17Q3 {
     }
 
     public static void function(char[] m, char[] n) {
-
+        boolean flag1 = true;
+        boolean flag2 = true;
+        boolean flag = true;
+        if (m[0] == '-') {
+            flag1 = false;
+        }
+        if (n[0] == '-') {
+            flag2 = false;
+        }
+        int[] num1 = new int[m.length - (flag1 ? 0 : 1)];
+        int[] num2 = new int[n.length - (flag2 ? 0 : 1)];
+        int[] num = new int[Math.max(m.length, n.length)];
     }
 }
