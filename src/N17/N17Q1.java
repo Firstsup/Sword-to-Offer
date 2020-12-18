@@ -26,11 +26,20 @@ public class N17Q1 {
     }
 
     public static boolean printNumber(int[] num) {
-        int number = 0;
-        for (int i = 0; i < num.length; i++) {
-            number += num[i] * Math.pow(10, (num.length - i - 1));
+        int count = 0;
+        boolean swi = false;
+        for (int j : num) {
+            if (j != 0) {
+                swi = true;
+            }
+            if (swi) {
+                System.out.print(j);
+            }
+            if (j == 9) {
+                count++;
+            }
         }
-        System.out.println(number);
-        return number == Math.pow(10, num.length) - 1;
+        System.out.println();
+        return count == num.length;
     }
 }

@@ -23,12 +23,19 @@ public class N17Q2 {
     }
 
     public static void printNumber(int[] num) {
-        int number = 0;
-        for (int i = 0; i < num.length; i++) {
-            number += num[i] * Math.pow(10, (num.length - i - 1));
+        int count = 0;
+        boolean swi = false;
+        for (int j : num) {
+            if (j != 0) {
+                swi = true;
+            }
+            if (swi) {
+                System.out.print(j);
+            }
+            if (j == 9) {
+                count++;
+            }
         }
-        if (number != 0) {
-            System.out.println(number);
-        }
+        System.out.println();
     }
 }
